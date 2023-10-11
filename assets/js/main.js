@@ -2,12 +2,12 @@
   { "use strict"
   
 /* 1. Proloder */
-    $(window).on('load', function () {
-      $('#preloader-active').delay(1).fadeOut('slow');
-      $('body').delay(1).css({
-        'overflow': 'visible'
-      });
-    });
+    // $(window).on('load', function () {
+    //   $('#preloader-active').delay(1).fadeOut('slow');
+    //   $('body').delay(1).css({
+    //     'overflow': 'visible'
+    //   });
+    // });
 
 /* 2. sticky And Scroll UP */
     $(window).on('scroll', function () {
