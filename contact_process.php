@@ -3,15 +3,15 @@
 $name = $_POST['name'];
 $email= $_POST['email'];
 $message= $_POST['message'];
-$to = "khlgad@gmail.com";
-$subject = "Mail From website";
+$to = "Eslammostafafitness@gmail.com";
+$subject = "Eslam Mostafa Mail Website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
-$headers = "From: noreply@yoursite.com" . "\r\n" .
+$headers = "From: noreply@eslam-mostafa.online.com" . "\r\n" .
 "CC: somebodyelse@example.com";
 if($email!=NULL){
-    echo("hello");
     mail($to,$subject,$txt,$headers);
+    header('Location: index.html');
+    exit;
 }
-//redirect
-header("Location:index.html");
+
 ?>
